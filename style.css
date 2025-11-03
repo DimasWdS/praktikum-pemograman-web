@@ -1,0 +1,39 @@
+.container-img {
+  width: 80%;
+  aspect-ratio: 16/4;
+  /* background-color: black; */
+}
+
+img {
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  border: 2px solid #333;
+  font-family: "Inter";
+  /* margin: auto; */
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #e6e6e6;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.logo-universitas,
+.container-hp {
+  height: 20rem;
+  aspect-ratio: 1/1;
+}
