@@ -37,3 +37,10 @@ th {
   height: 20rem;
   aspect-ratio: 1/1;
 }
+
+.pembatas-praktikum {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
