@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>belajar membuat form</title>
+  </head>
+  <body>
+    <form
+      style="display: flex; flex-direction: column; gap: 1rem"
+      action="soalA.html"
+      method="get"
+    >
+      <!-- form nama -->
+      <div>
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="" value="Dimas widy saputra" />
+      </div>
+      <!-- form password -->
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="" />
+      </div>
+      <!-- Form jenis kelamin  -->
+      <div>
+        <label for="jeniskelamin">Jenis Kelamin</label>
+        <div>
+          <input
+            type="radio"
+            name="jeniskelamin"
+            value="laki-laki"
+            checked
+            id=""
+          />
+          <span>laki laki</span>
+        </div>
+        <div>
+          <input type="radio" name="jeniskelamin" value="perempuan" id="" />
+          <span>perempuan</span>
+        </div>
+      </div>
+      <!-- Form hobi  -->
+      <div>
+        <label for="hobi">Hobi :</label>
+        <div>
+          <input type="radio" name="hobi_baca" id="" />
+          <span>Membaca buku</span>
+        </div>
+        <div>
+          <input type="radio" name="hobi_nulis" id="" />
+          <span>Menulis</span>
+        </div>
+        <div>
+          <input type="radio" name="hobi_mancing" id="" />
+          <span>Memancing</span>
+        </div>
+        <div>
+          <input type="radio" name="hobi_nonton" id="" checked />
+          <span>Nonton Film</span>
+        </div>
+      </div>
+      <!-- Form asal kota  -->
+      <div>
+        <label for="asal-kota">Asal Kota :</label>
+        <select name="asal-kota-list" id="asal-kota">
+          <option value="Madiun" selected>Madiun</option>
+          <option value="Madiun">Ngawi</option>
+          <option value="Madiun">Magetan</option>
+          <option value="Madiun">Ponorogo</option>
+        </select>
+      </div>
+      <!-- Form komentar -->
+      <div style="display: flex; flex-direction: column; width: 20rem">
+        <label for="komentar">Komentar anda</label>
+        <textarea name="komentar" id="komentar"></textarea>
+        <p>Silakan tulis isi hati anda!</p>
+      </div>
+      <!-- btn submit  -->
+      <div>
+        <input type="submit" value="Mulai Proses" name="" id="" />
+      </div>
+    </form>
+  </body>
+</html>

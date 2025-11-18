@@ -1,0 +1,41 @@
+nav {
+  background-color: green;
+  grid-area: nav;
+}
+
+header {
+  background-color: yellow;
+  grid-area: header;
+  text-align: center;
+}
+
+section {
+  background-color: cadetblue;
+  grid-area: section;
+}
+
+footer {
+  background-color: gray;
+  grid-area: footer;
+  font-size: small;
+  text-align: center;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav section section"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 50px;
+  grid-template-columns: 20% 1fr 18%;
+  grid-gap: 5px;
+  margin: 10px;
+}
+
+header,
+nav,
+section,
+footer {
+  padding: 5px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <form
+      style="display: flex; flex-direction: column; gap: 1rem"
+      action="soalC.html"
+      method="get"
+    >
+      <div>
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="nama" value="Dimas Widy Saputra" />
+      </div>
+      <div>
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <!--  -->
+      <div>
+        <label for="keperluan">Ingin bertemu</label>
+        <div>
+          <input type="radio" name="keperluan" id="dokter-a" value="dokter-a" />
+          <label for="dokter-a">Dokter A</label>
+        </div>
+        <div>
+          <input type="radio" name="keperluan" id="dokter-b" value="dokter-b" />
+          <label for="dokter-b">Dokter B</label>
+        </div>
+        <div>
+          <input type="radio" name="keperluan" id="dokter-c" value="dokter-c" />
+          <label for="dokter-c">Dokter C</label>
+        </div>
+      </div>
+      <div>
+        <label for="keperluan">Kepreluan</label>
+        <select name="keperluanList" id="keperluan">
+          <option value="kontrol" selected>Kontrol</option>
+          <option value="konsultasi">konsultasi</option>
+        </select>
+      </div>
+      <div style="display: flex; flex-direction: column; max-width: 20rem">
+        <label for="pesan">Pesan : </label>
+        <textarea name="pesan" id="pesan"></textarea>
+      </div>
+      <div>
+        <input type="submit" name="" id="" />
+      </div>
+    </form>
+  </body>
+</html>

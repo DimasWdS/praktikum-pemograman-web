@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulir_Perpuskotamadiun</title>
+  </head>
+  <body>
+    <form
+      style="display: flex; flex-direction: column; gap: 1rem"
+      action="soalC.html"
+      method="get"
+    >
+      <div>
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="nama" value="Dimas Widy Saputra" />
+      </div>
+      <div>
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <!--  -->
+      <div>
+        <label for="keperluan">keperluan</label>
+        <div>
+          <input type="radio" name="keperluan" id="" value="sumbang-buku" />
+          <label for="">Menyumbang buku</label>
+        </div>
+        <div>
+          <input type="radio" name="keperluan" id="" value="pinjam-buku" />
+          <label for="">Meminjam Buku</label>
+        </div>
+        <div>
+          <input type="radio" name="keperluan" id="" value="balikan-buku" />
+          <label for="">Mengembalikan buku</label>
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <label for="metodePengambilan">Metode pengambilan</label>
+        <select name="metodePengambilan" id="metodePengambilan">
+          <option value="diantar" selected>diantar</option>
+          <option value="ddambil">diambil</option>
+        </select>
+      </div>
+      <!--  -->
+      <div style="display: flex; flex-direction: column; max-width: 20rem">
+        <label for="pesan">Pesan : </label>
+        <textarea name="pesan" id="pesan"></textarea>
+      </div>
+      <div>
+        <input type="submit" name="" id="" />
+      </div>
+    </form>
+  </body>
+</html>
