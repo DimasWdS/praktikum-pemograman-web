@@ -1,0 +1,22 @@
+.ascda {
+  position: fixed;
+  inset: 0;
+  /* width: 100%; */
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgb(54, 54, 54);
+  height: max-content;
+  overflow: auto;
+}
+
+.sacd {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  background-color: rgb(169, 118, 41);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid white !important;
+  flex-shrink: 0;
+}

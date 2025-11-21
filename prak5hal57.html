@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>belajar membuat form</title>
+    <link rel="stylesheet" href="module/nav.css" />
+  </head>
+  <body>
+    <nav class="container-nav"></nav>
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 10rem;
+      "
+      action="prak5hal57.html"
+      method="get"
+    >
+      <h1>Soal A dan B</h1>
+      <!-- form nama -->
+      <div>
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="" value="Dimas widy saputra" />
+      </div>
+      <!-- form password -->
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="" />
+      </div>
+      <!-- Form jenis kelamin  -->
+      <div>
+        <label for="jeniskelamin">Jenis Kelamin</label>
+        <div>
+          <input
+            type="radio"
+            name="jeniskelamin"
+            value="laki-laki"
+            checked
+            id=""
+          />
+          <span>laki laki</span>
+        </div>
+        <div>
+          <input type="radio" name="jeniskelamin" value="perempuan" id="" />
+          <span>perempuan</span>
+        </div>
+      </div>
+      <!-- Form hobi  -->
+      <div>
+        <label for="hobi">Hobi :</label>
+        <div>
+          <input type="radio" name="hobi_baca" id="" />
+          <span>Membaca buku</span>
+        </div>
+        <div>
+          <input type="radio" name="hobi_nulis" id="" />
+          <span>Menulis</span>
+        </div>
+        <div>
+          <input type="radio" name="hobi_mancing" id="" />
+          <span>Memancing</span>
+        </div>
+        <div>
+          <input type="radio" name="hobi_nonton" id="" checked />
+          <span>Nonton Film</span>
+        </div>
+      </div>
+      <!-- Form asal kota  -->
+      <div>
+        <label for="asal-kota">Asal Kota :</label>
+        <select name="asal-kota-list" id="asal-kota">
+          <option value="Madiun" selected>Madiun</option>
+          <option value="Madiun">Ngawi</option>
+          <option value="Madiun">Magetan</option>
+          <option value="Madiun">Ponorogo</option>
+        </select>
+      </div>
+      <!-- Form komentar -->
+      <div style="display: flex; flex-direction: column; width: 20rem">
+        <label for="komentar">Komentar anda</label>
+        <textarea name="komentar" id="komentar"></textarea>
+        <p>Silakan tulis isi hati anda!</p>
+      </div>
+      <!-- btn submit  -->
+      <div>
+        <input type="submit" value="Mulai Proses" name="" id="" />
+      </div>
+    </form>
+    <!--  -->
+
+    <form
+      style="display: flex; flex-direction: column; gap: 1rem"
+      action="prak5hal57.html"
+      method="get"
+    >
+      <h1>Soal C</h1>
+      <div>
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="nama" value="Dimas Widy Saputra" />
+      </div>
+      <div>
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <!--  -->
+      <div>
+        <label for="keperluan">keperluan</label>
+        <div>
+          <input type="radio" name="keperluan" id="" value="sumbang-buku" />
+          <label for="">Menyumbang buku</label>
+        </div>
+        <div>
+          <input type="radio" name="keperluan" id="" value="pinjam-buku" />
+          <label for="">Meminjam Buku</label>
+        </div>
+        <div>
+          <input type="radio" name="keperluan" id="" value="balikan-buku" />
+          <label for="">Mengembalikan buku</label>
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <label for="metodePengambilan">Metode pengambilan</label>
+        <select name="metodePengambilan" id="metodePengambilan">
+          <option value="diantar" selected>diantar</option>
+          <option value="ddambil">diambil</option>
+        </select>
+      </div>
+      <!--  -->
+      <div style="display: flex; flex-direction: column; max-width: 20rem">
+        <label for="pesan">Pesan : </label>
+        <textarea name="pesan" id="pesan"></textarea>
+      </div>
+      <div>
+        <input type="submit" name="" id="" />
+      </div>
+    </form>
+
+    <!--  -->
+
+    <form
+      style="display: flex; flex-direction: column; gap: 1rem"
+      action="prak5hal57.html"
+      method="get"
+    >
+      <h1>Soal D</h1>
+      <div>
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="nama" value="Dimas Widy Saputra" />
+      </div>
+      <div>
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <!--  -->
+      <div>
+        <label for="keperluan">Ingin bertemu</label>
+        <div>
+          <input type="radio" name="keperluan" id="dokter-a" value="dokter-a" />
+          <label for="dokter-a">Dokter A</label>
+        </div>
+        <div>
+          <input type="radio" name="keperluan" id="dokter-b" value="dokter-b" />
+          <label for="dokter-b">Dokter B</label>
+        </div>
+        <div>
+          <input type="radio" name="keperluan" id="dokter-c" value="dokter-c" />
+          <label for="dokter-c">Dokter C</label>
+        </div>
+      </div>
+      <div>
+        <label for="keperluan">Kepreluan</label>
+        <select name="keperluanList" id="keperluan">
+          <option value="kontrol" selected>Kontrol</option>
+          <option value="konsultasi">konsultasi</option>
+        </select>
+      </div>
+      <div style="display: flex; flex-direction: column; max-width: 20rem">
+        <label for="pesan">Pesan : </label>
+        <textarea name="pesan" id="pesan"></textarea>
+      </div>
+      <div>
+        <input type="submit" name="" id="" />
+      </div>
+    </form>
+
+    <script type="module" src="module/module.js"></script>
+  </body>
+</html>

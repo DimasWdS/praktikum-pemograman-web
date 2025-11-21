@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/prak3hal51.css" />
+    <link rel="stylesheet" href="module/nav.css" />
+  </head>
+  <body style="padding-top: 10rem">
+    <nav class="container-nav"></nav>
+    <header>
+      <h1>HTML5 Sinematik</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pengertian">Pengertian</a></li>
+        <li><a href="#kesimpulan">Kesimpulan</a></li>
+      </ul>
+    </nav>
+    <section>konten</section>
+    <footer>Copyright</footer>
+  </body>
+
+  <script type="module">
+    import { createNav } from "./module/nav.mjs";
+
+    const conTarget = document.querySelector(".container-nav");
+
+    createNav(conTarget);
+  </script>
+</html>

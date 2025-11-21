@@ -3,10 +3,12 @@
   <head>
     <title>Dimas Widy Saputra</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="module/nav.css" />
   </head>
   <body>
+    <nav class="container-nav"></nav>
     <header class="pembatas-praktikum">
-      <h1>Tugas Praktikum 1 hal 16</h1>
+      <h1 style="margin-top: 10rem">Tugas Praktikum 1 hal 16</h1>
     </header>
     <p>Saya siap membantai tugas praktikum</p>
     <header class="pembatas-praktikum">
@@ -159,5 +161,13 @@
         <li>Es Degan</li>
       </ol>
     </section>
+
+    <script type="module">
+      import { createNav } from "./module/nav.mjs";
+
+      const conTarget = document.querySelector(".container-nav");
+
+      createNav(conTarget);
+    </script>
   </body>
 </html>
