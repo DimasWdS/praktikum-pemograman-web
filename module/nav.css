@@ -14,9 +14,9 @@
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
-  background-color: rgb(169, 118, 41);
+  background-color: rgb(237, 159, 42);
   padding: 0.5rem 1rem;
-  border-radius: 10px;
-  border: 2px solid white !important;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0) !important;
   flex-shrink: 0;
 }

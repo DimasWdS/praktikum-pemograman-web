@@ -3,8 +3,145 @@
   <head>
     <link rel="stylesheet" href="module/nav.css" />
   </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      gap: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      padding: 0.2rem 1rem;
+    }
+  </style>
   <body>
     <nav class="container-nav"></nav>
+
+    <section style="margin-top: 10rem">
+      <h1>Soal A</h1>
+      <section class="container">
+        <h2>Konversi angka ke huruf</h2>
+        <label for="angka">Masukan Angka</label>
+        <input type="number" name="" id="angka" />
+        <button id="submit-angka">Submit</button>
+        <div style="display: flex; align-items: center">
+          <span>Hasil nilai : </span>
+          <p id="hasil"></p>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2>Kalkulator sederhana</h2>
+        <input type="number" name="" id="input1" placeholder="input 1" />
+        <input type="number" name="" id="input2" placeholder="input 2" />
+
+        <p>Pilih operator</p>
+        <div>
+          <a id="tambah" href="#">Tambah</a>
+          <a id="kali" href="#">Kali</a>
+          <a id="kurang" href="#">Kurang</a>
+          <a id="bagi" href="#">Bagi</a>
+        </div>
+
+        <div>
+          <span>
+            hasil :
+            <p id="hasil-operator"></p
+          ></span>
+        </div>
+      </section>
+    </section>
     <script type="module" src="module/module.js"></script>
+    <script type="module">
+      {
+        const btn = document.getElementById("submit-angka");
+        const inputNumber = document.getElementById("angka");
+        const conHasil = document.getElementById("hasil");
+
+        btn.addEventListener("click", () => {
+          const valueAngka = inputNumber.value;
+
+          switch (true) {
+            case valueAngka >= 81 && valueAngka <= 100:
+              conHasil.textContent = "A";
+              break;
+
+            case valueAngka >= 71 && valueAngka <= 80:
+              conHasil.textContent = "AB";
+              break;
+
+            case valueAngka >= 66 && valueAngka <= 70:
+              conHasil.textContent = "B";
+              break;
+
+            case valueAngka >= 61 && valueAngka <= 65:
+              conHasil.textContent = "BC";
+              break;
+            default:
+
+            case valueAngka >= 56 && valueAngka <= 60:
+              conHasil.textContent = "C";
+              break;
+
+            case valueAngka >= 41 && valueAngka <= 55:
+              conHasil.textContent = "D";
+              break;
+
+            case valueAngka >= 0 && valueAngka <= 40:
+              conHasil.textContent = "E";
+              break;
+              conHasil.textContent = "Input tidak valid";
+          }
+        });
+      }
+
+      {
+        const input1 = document.getElementById("input1");
+        const input2 = document.getElementById("input2");
+
+        const btnTambah = document.getElementById("tambah");
+        const btnBagi = document.getElementById("bagi");
+        const btnKurang = document.getElementById("kurang");
+        const btnKali = document.getElementById("kali");
+
+        const conHasil = document.getElementById("hasil-operator");
+
+        btnTambah.addEventListener("click", () => {
+          let value1 = input1.value;
+          let value2 = input2.value;
+
+          let tambah = parseInt(value1) + parseInt(value2);
+
+          conHasil.textContent = tambah;
+        });
+        btnKali.addEventListener("click", () => {
+          let value1 = input1.value;
+          let value2 = input2.value;
+
+          let operator = parseInt(value1) * parseInt(value2);
+
+          conHasil.textContent = operator;
+        });
+        btnBagi.addEventListener("click", () => {
+          let value1 = input1.value;
+          let value2 = input2.value;
+
+          let operator = parseInt(value1) / parseInt(value2);
+
+          conHasil.textContent = operator;
+        });
+        btnKurang.addEventListener("click", () => {
+          let value1 = input1.value;
+          let value2 = input2.value;
+
+          let operator = parseInt(value1) - parseInt(value2);
+
+          conHasil.textContent = operator;
+        });
+      }
+    </script>
   </body>
 </html>
