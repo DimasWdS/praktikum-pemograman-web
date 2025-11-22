@@ -5,7 +5,7 @@ function createNav(conTarget) {
 
   container.classList.add("ascda");
 
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 8; i++) {
     const a = document.createElement("a");
 
     a.classList.add("sacd");
@@ -48,6 +48,10 @@ function createNav(conTarget) {
       case i === 6:
         a.textContent = "Module 7 hal 80";
         a.setAttribute("href", "prak7hal80.html");
+        break;
+      case i === 7:
+        a.textContent = "Module 8 hal 89";
+        a.setAttribute("href", "prak8hal89.html");
         break;
     }
   }
